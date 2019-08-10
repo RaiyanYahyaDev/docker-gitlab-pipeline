@@ -4,4 +4,5 @@ stages:
 build:
   image: registry.gitlab.com/raiyanyahya/docker-python-version
   stage: build
-  command: ["inputpassed"]
+  script:
+  - Dummy Script
