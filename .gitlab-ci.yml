@@ -1,7 +1,15 @@
 stages:
   - build
+  - testmyimage:
+
 build:
   image: registry.gitlab.com/raiyanyahya/docker-python-version
   stage: build
   script:
-    - "Dummy Script"
+    - python --version
+
+testmyimage:
+  image: registry.gitlab.com/raiyanyahya/docker-python-version
+  stage: testmyimage:
+  script:
+    - testinput
