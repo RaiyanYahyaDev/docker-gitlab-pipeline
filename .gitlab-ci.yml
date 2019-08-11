@@ -10,3 +10,4 @@ build:
    stage: build
    script:
      - echo "pwd"
+   entrypoint: ["pwd"]
