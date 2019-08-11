@@ -1,0 +1,13 @@
+image: registry.gitlab.com/raiyanyahya/docker-python-version
+
+services:
+    - docker:17.09-dind
+
+stages:
+    - build
+
+build:
+   stage: build
+   script:
+     - echo "pwd"
+   entrypoint: ["pwd"]
