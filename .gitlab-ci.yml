@@ -3,10 +3,6 @@ default:
     name: registry.gitlab.com/raiyanyahya/docker-python-version
     #entrypoint: ["/bin/bash"]
 
-stages:
-    - build
-
-
 build:
   script:
   - test
