@@ -1,8 +1,9 @@
-default:
-  image:
-    name: registry.gitlab.com/raiyanyahya/docker-python-version
-    entrypoint: ["python", "test.py"]
+image: registry.gitlab.com/raiyanyahya/docker-python-version
+
+stages:
+    - build
 
 build:
-  script:
-  - test
+   stage: build
+   script:
+     - echo "pwd"
