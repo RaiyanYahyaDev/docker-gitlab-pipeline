@@ -1,7 +1,0 @@
-stages:
-  - build
-build:
-  image: registry.gitlab.com/raiyanyahya/docker-python-version
-  stage: build
-  script:
-    - "Dummy Script"

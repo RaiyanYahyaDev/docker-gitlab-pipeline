@@ -1,7 +1,7 @@
-MyTest:
+stages:
+  - build
+build:
+  image: registry.gitlab.com/raiyanyahya/docker-python-version
   stage: build
-  image:
-    name: registry.gitlab.com/raiyanyahya/docker-python-version
-    entrypoint: ["python", "test.py"]
   script:
-    - test
+    - "Dummy Script"
