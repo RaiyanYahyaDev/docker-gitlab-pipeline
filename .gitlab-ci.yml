@@ -3,5 +3,6 @@ stages:
 build:
   image: registry.gitlab.com/raiyanyahya/docker-python-version
   stage: build
+  entrypoint: ["python","test.py","test"]
   script:
     - "Dummy Script"
