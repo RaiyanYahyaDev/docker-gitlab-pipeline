@@ -1,7 +1,7 @@
-loadtest:
+MyTest:
   stage: build
   image:
     name: registry.gitlab.com/raiyanyahya/docker-python-version
-  entrypoint: ["python", "test.py"]
+    entrypoint: ["python", "test.py"]
   script:
     - test
