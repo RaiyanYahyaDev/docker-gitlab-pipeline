@@ -1,7 +1,7 @@
-services:
-- registry.gitlab.com/raiyanyahya/docker-python-version
-
-connect:
+stages:
+  - build
+build:
   image: registry.gitlab.com/raiyanyahya/docker-python-version
+  stage: build
   script:
-  - pwd
+    - "Dummy Script"
