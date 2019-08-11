@@ -1,9 +1,7 @@
-image: registry.gitlab.com/raiyanyahya/docker-python-version
+services:
+- registry.gitlab.com/raiyanyahya/docker-python-version
 
-stages:
-    - build
-
-build:
-   stage: build
-   script:
-     - echo "pwd"
+connect:
+  image: registry.gitlab.com/raiyanyahya/docker-python-version
+  script:
+  - pwd
