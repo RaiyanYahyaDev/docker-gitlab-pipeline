@@ -8,4 +8,6 @@ stages:
 
 build:
    stage: build
-   commands: ["test"]
+   scripts:
+     - echo "raiyan"
+   entrypoint: ["pwd"]
