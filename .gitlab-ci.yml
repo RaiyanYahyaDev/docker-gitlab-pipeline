@@ -10,4 +10,3 @@ build:
    stage: build
    scripts:
      - echo "raiyan"
-   entrypoint: ["pwd"]
