@@ -1,6 +1,6 @@
 stages:
   - build
-  - testmyimage:
+  - testmyimage
 
 build:
   image: registry.gitlab.com/raiyanyahya/docker-python-version
