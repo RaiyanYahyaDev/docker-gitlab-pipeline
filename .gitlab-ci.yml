@@ -8,4 +8,4 @@ stages:
 
 build:
    stage: build
-   commands: test
+   commands: ["test"]
