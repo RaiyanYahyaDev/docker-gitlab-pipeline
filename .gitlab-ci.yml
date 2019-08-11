@@ -1,6 +1,12 @@
+image: registry.gitlab.com/raiyanyahya/docker-python-version
+
+services:
+    - docker:17.09-dind
+
 stages:
-  - build
+    - build
+
 build:
-  image: registry.gitlab.com/raiyanyahya/docker-python-version
-  stage: build
-  script: "wow"
+   stage: build
+   script:
+      - test
