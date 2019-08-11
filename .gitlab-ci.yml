@@ -8,5 +8,5 @@ stages:
 
 build:
    stage: build
-   scripts:
-     - echo "raiyan"
+   script:
+     - echo "pwd"
