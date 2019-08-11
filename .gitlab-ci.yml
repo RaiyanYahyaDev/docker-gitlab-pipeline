@@ -8,5 +8,4 @@ stages:
 
 build:
    stage: build
-   script:
-      - test
+   command: test
