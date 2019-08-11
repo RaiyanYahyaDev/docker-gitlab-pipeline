@@ -1,9 +1,10 @@
 stages:
   - build
-services:
-  - docker:dind
 build:
   image: registry.gitlab.com/raiyanyahya/docker-python-version
   stage: build
   script:
     - Dummy Script
+configs:
+   gitlab:
+      file: ./config.toml
