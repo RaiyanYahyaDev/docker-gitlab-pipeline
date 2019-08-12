@@ -9,4 +9,4 @@ test-client:
   stage: test
   script:
     - docker pull registry.gitlab.com/raiyanyahya/docker-python-version
-    - docker run python test.py here
+    - docker run python /app/test.py here
