@@ -1,15 +1,12 @@
+image: docker:latest
+services:
+- docker:dind
+
 stages:
-  - build
-  - testmyimage
+- test
 
-build:
-  image: registry.gitlab.com/raiyanyahya/docker-python-version
-  stage: build
+test-client:
+  stage: test
   script:
-    - python --version
-
-testmyimage:
-  image: registry.gitlab.com/raiyanyahya/docker-python-version
-  stage: testmyimage
-  script:
-    - testinput
+    - docker pull registry.gitlab.com/raiyanyahya/docker-python-version
+    - docker run python test.py here
